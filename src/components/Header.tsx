@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useState } from "react"
+import { Menu, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navigation = [
     { name: "Home", href: "/" },
@@ -11,18 +11,16 @@ const Header = () => {
     { name: "Career", href: "/career" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
-  ];
+  ]
 
   return (
     <header className="bg-primary text-primary-foreground shadow-elegant">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold tracking-tight">TaskNova</h1>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navigation.map((item) => (
@@ -37,7 +35,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
           <div className="md:hidden">
             <Button
               variant="ghost"
@@ -50,7 +47,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-primary-foreground/20">
@@ -69,7 +65,5 @@ const Header = () => {
         )}
       </nav>
     </header>
-  );
-};
-
-export default Header;
+  )
+}

@@ -1,13 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Building2, Users, MapPin, Trophy, Target, Lightbulb, Star, CheckCircle, Code, Smartphone, Cloud, Shield } from "lucide-react";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { ArrowRight, Building2, Users, MapPin, Trophy, Target, Lightbulb, Star, CheckCircle, Code, Smartphone, Cloud, Shield } from "lucide-react"
 
-const MainContent = () => {
-  return (
-    <main className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+export const MainContent = () => (
+  <main className="min-h-screen bg-background">
+    <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
             Welcome to TaskNova Solutions Pvt. Ltd.
@@ -27,8 +25,7 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center group">
@@ -58,8 +55,7 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
@@ -128,8 +124,7 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Why Choose TaskNova?</h2>
@@ -202,54 +197,49 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Technologies Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Technologies We Use</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We work with the latest and most reliable technologies to build scalable, performant solutions.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {[
-              "React", "Node.js", "Python", "TypeScript", "AWS", "Docker",
-              "MongoDB", "PostgreSQL", "GraphQL", "Next.js", "Vue.js", "Laravel"
-            ].map((tech, index) => (
-              <div key={index} className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
-                <Badge variant="secondary" className="text-sm font-medium">
-                  {tech}
-                </Badge>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help you achieve your digital transformation goals. 
-            Get in touch with our team today for a free consultation.
+    <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Technologies We Use</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We work with the latest and most reliable technologies to build scalable, performant solutions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="px-8 py-4 text-lg">
-              Start Your Project
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
-              Schedule Consultation
-            </Button>
-          </div>
         </div>
-      </section>
-    </main>
-  );
-};
 
-export default MainContent;
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {[
+            "React", "Node.js", "Python", "TypeScript", "AWS", "Docker",
+            "MongoDB", "PostgreSQL", "GraphQL", "Next.js", "Vue.js", "Laravel"
+          ].map((tech, index) => (
+            <div key={index} className="text-center p-4 rounded-lg border bg-card hover:shadow-md transition-shadow duration-300">
+              <Badge variant="secondary" className="text-sm font-medium">
+                {tech}
+              </Badge>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          Ready to Transform Your Business?
+        </h2>
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Let's discuss how we can help you achieve your digital transformation goals. 
+          Get in touch with our team today for a free consultation.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button size="lg" className="px-8 py-4 text-lg">
+            Start Your Project
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+          <Button variant="outline" size="lg" className="px-8 py-4 text-lg">
+            Schedule Consultation
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+)

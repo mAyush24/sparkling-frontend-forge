@@ -1,13 +1,12 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
-const Contact = () => {
-  return (
+export const Contact = () => (
     <div className="min-h-screen bg-background">
       <Header />
       
@@ -168,7 +167,4 @@ const Contact = () => {
       
       <Footer />
     </div>
-  );
-};
-
-export default Contact;
+  )

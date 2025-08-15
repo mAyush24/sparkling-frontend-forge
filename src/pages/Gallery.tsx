@@ -1,7 +1,7 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
 
-const Gallery = () => {
+export const Gallery = () => {
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -47,7 +47,6 @@ const Gallery = () => {
       
       <main className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-foreground mb-6">Our Work</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -56,7 +55,6 @@ const Gallery = () => {
             </p>
           </div>
 
-          {/* Project Gallery */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="group cursor-pointer">
@@ -78,7 +76,6 @@ const Gallery = () => {
             ))}
           </div>
 
-          {/* Stats Section */}
           <div className="mt-20 bg-card rounded-lg p-8 border">
             <h2 className="text-3xl font-bold text-center mb-8">Our Impact</h2>
             <div className="grid md:grid-cols-4 gap-8 text-center">
@@ -105,7 +102,5 @@ const Gallery = () => {
       
       <Footer />
     </div>
-  );
-};
-
-export default Gallery;
+  )
+}

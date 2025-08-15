@@ -1,10 +1,10 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Clock, Briefcase } from "lucide-react";
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { MapPin, Clock, Briefcase } from "lucide-react"
 
-const Career = () => {
+export const Career = () => {
   const jobOpenings = [
     {
       title: "Senior Frontend Developer",
@@ -42,7 +42,6 @@ const Career = () => {
       
       <main className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl font-bold text-foreground mb-6">Join Our Team</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -51,7 +50,6 @@ const Career = () => {
             </p>
           </div>
 
-          {/* Why Work With Us */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Why TaskNova?</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -81,7 +79,6 @@ const Career = () => {
             </div>
           </div>
 
-          {/* Job Openings */}
           <div>
             <h2 className="text-3xl font-bold text-center mb-8">Current Openings</h2>
             <div className="grid gap-6">
@@ -114,7 +111,6 @@ const Career = () => {
             </div>
           </div>
 
-          {/* CTA Section */}
           <div className="text-center mt-16 p-8 bg-card rounded-lg border">
             <h3 className="text-2xl font-bold mb-4">Don't see the right role?</h3>
             <p className="text-muted-foreground mb-6">
@@ -127,7 +123,5 @@ const Career = () => {
       
       <Footer />
     </div>
-  );
-};
-
-export default Career;
+  )
+}

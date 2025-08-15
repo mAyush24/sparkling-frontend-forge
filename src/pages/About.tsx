@@ -1,9 +1,8 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
 import { Users, Target, Award, Lightbulb } from "lucide-react";
 
-const About = () => {
-  return (
+export const About = () => (
     <div className="min-h-screen bg-background">
       <Header />
       
@@ -79,7 +78,4 @@ const About = () => {
       
       <Footer />
     </div>
-  );
-};
-
-export default About;
+  )
